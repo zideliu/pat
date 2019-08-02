@@ -23,7 +23,7 @@ int main() {
     }
     cout << s << endl;
 //第二种方法
-    int k[8],i=0,flag=0;
+    int k[8],i=0,flag=0;//建立数组，两个七位数相加最多八位数，所以选择k[8]
     if(c<0){
         c=-c;
         flag=1;
@@ -37,7 +37,7 @@ int main() {
             i++;
         }
         if(flag)cout<<"-";
-        for(i=8-i;i<8;i++)
+        for(i=8-i;i<8;i++)//8-i为该数组的起始位置
         {
             cout<<k[i];
             if(i==1||i==4)
@@ -46,4 +46,3 @@ int main() {
     }
     return 0;
 }
-
