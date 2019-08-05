@@ -31,6 +31,6 @@ else if(s[i]>s[k]+w(k,i))then(way[i]=way[k])
 
 if(s[i]==s[k]+w(k,i))then(way[i]+=way[k];num[i]+=num[k])
 
-else if(s[i]>s[k]+w(k,i))then(way[i]=way[k];num[i]=num[k]+d[k])
+else if(s[i]>s[k]+w(k,i))then(way[i]=way[k];num[i]=num[k]+b[i])
 这样就结束了。
 ##
