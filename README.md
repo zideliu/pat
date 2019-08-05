@@ -22,7 +22,10 @@ dijkstra算法，在此算法中加入way[i]表示从起点到第i个地方的�
 其中比较主要的是判断way[i]。在该最短路径算法中，判断最短路径的核心步骤：如果(s[i]>s[k]+w(k,i))则(s[i]=s[k]+w(k,i))，在进行计算最短路径的条数时可用到way[i]。
 
 if(s[i]==s[k]+w(k,i))then(way[i]+=way[k])
-else if(s[i]>s[k]+w(k,i))then(way[i]=way[k])这样便可以计算出way[i]的值，最后输出即可
+
+else if(s[i]>s[k]+w(k,i))then(way[i]=way[k])
+
+这样便可以计算出way[i]的值，最后输出即可
 
 在此基础上，再进行判断num[i]的值，如下：
 
